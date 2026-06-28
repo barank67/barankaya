@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barankaya.com.tr/sitemap.xml
