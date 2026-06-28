@@ -1,0 +1,11 @@
+*.md
+*.png
+*.jpeg
+*.jpg
+*.webp
+barankaya-current.html
+favicon-source.ico
+
+!favicon.ico
+!assets/icons/*.png
+!assets/img/*.webp
