@@ -192,6 +192,7 @@ p {
 }
 
 .intro-grid p,
+.about-flow p,
 .story-copy p,
 .feature p,
 .today p,
@@ -204,6 +205,35 @@ p {
 
 .intro-grid p + p {
   margin-top: 14px;
+}
+
+.about-flow {
+  display: grid;
+  gap: 28px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-top: 1px solid var(--line);
+}
+
+.about-flow article {
+  max-width: 940px;
+}
+
+.about-flow article + article {
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+.about-flow p + p {
+  margin-top: 14px;
+}
+
+.about-flow.compact {
+  padding-bottom: 24px;
+}
+
+.about-flow.final-about {
+  background: #ece7dc;
 }
 
 .intro-grid h2,
@@ -291,6 +321,30 @@ p {
   padding-top: 64px;
   padding-bottom: 64px;
   border-top: 1px solid var(--line);
+}
+
+.today p + p {
+  margin-top: 12px;
+}
+
+.today-copy p {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.contact-note {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-note p {
+  color: var(--muted);
+  font-size: 1.04rem;
 }
 
 .site-footer {
@@ -389,6 +443,7 @@ p {
   .story-section,
   .two-column,
   .today,
+  .contact-note,
   .note.with-image,
   .project-grid {
     grid-template-columns: 1fr;
